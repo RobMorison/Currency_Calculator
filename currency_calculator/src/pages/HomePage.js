@@ -21,8 +21,17 @@ const HomePage = () => {
             <label>Enter value to convert:
                 <input type='integer' value={value} onChange={(event) =>setValue(event.target.value)}></input>
             </label>
-            <button onClick={handleSubmit}>Convert</button>
+            {/* <button onClick={handleSubmit}>Convert</button> */}
         </form>
+        <div>
+            Euro = {value * .92711}
+        </div>
+        <div>
+            Pound = {value * .80551}
+        </div>
+        <div>
+            Yen = {value * 138.567}
+        </div>
         </>
     
      );
