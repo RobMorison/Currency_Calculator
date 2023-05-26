@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import currency from './../components/currency'
+import "./HomePage.css"
 
 const HomePage = () => {
 
@@ -17,7 +18,7 @@ const HomePage = () => {
 
     return ( 
         <>
-        <form>
+        <form className='form'>
             <label>Enter value to convert:
                 <input type='integer' value={value} onChange={(event) =>setValue(event.target.value)}></input>
             </label>
